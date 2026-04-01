@@ -1,0 +1,46 @@
+/* Base Reset */
+* {margin:0;padding:0;box-sizing:border-box;}
+html,body {font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.6;color:#333;background:#f9f9f9;}
+.container {max-width:1200px;margin:auto;padding:0 15px;}
+/* Header */
+.site-header {background:#0d47a1;color:#fff;padding:20px 0;}
+.site-header .logo {font-size:1.8rem;}
+.site-header .nav ul {list-style:none;display:flex;gap:15px;}
+.site-header .nav a {color:#fff;text-decoration:none;font-weight:500;}
+/* Hero */
+.hero {background:linear-gradient(135deg,#1565c0,#0d47a1);color:#fff;padding:80px 0;text-align:center;}
+.hero .btn-primary {background:#ffca28;color:#212121;padding:12px 24px;border:none;border-radius:4px;cursor:pointer;text-decoration:none;}
+/* Sections */
+.section {padding:60px 0;}
+.section h2 {font-size:2rem;margin-bottom:20px;text-align:center;}
+.module {background:#fff;margin-bottom:30px;padding:20px;border-radius:6px;box-shadow:0 2px 4px rgba(0,0,0,0.1);}
+.module h3 {color:#0d47a1;margin-bottom:10px;}
+.download-link {display:inline-block;margin-top:10px;color:#1565c0;text-decoration:none;}
+.download-link:hover {text-decoration:underline;}
+/* Pricing */
+.pricing-section .pricing-table {display:flex;gap:20px;justify-content:center;flex-wrap:wrap;}
+.pricing-section .plan {background:#fff;padding:30px;border-radius:8px;width:280px;box-shadow:0 2px 6px rgba(0,0,0,0.1);text-align:center;}
+.pricing-section .plan.featured {border:2px solid #ffca28;}
+.pricing-section .price {font-size:2.5rem;color:#0d47a1;margin:15px 0;}
+.pricing-section .btn-primary {margin-top:15px;display:inline-block;}
+/* Contact */
+.contact-section .lead-form {max-width:500px;margin:auto;display:flex;flex-direction:column;gap:12px;}
+.lead-form label {font-weight:600;}
+.lead-form input {padding:10px;border:1px solid #ccc;border-radius:4px;}
+.lead-form button {background:#0d47a1;color:#fff;padding:12px;border:none;border-radius:4px;cursor:pointer;}
+.lead-form button:hover {background:#1565c0;}
+/* Footer */
+.site-footer {background:#212121;color:#bbb;padding:20px 0;text-align:center;}
+.site-footer .social-links {list-style:none;display:flex;gap:10px;justify-content:center;margin-top:10px;}
+.site-footer .social-links a {color:#bbb;text-decoration:none;}
+.site-footer .social-links a:hover {color:#fff;}
+/* Responsive */
+@media (max-width:768px) {
+    .site-header .nav ul {flex-direction:column;align-items:center;}
+    .pricing-section .pricing-table {flex-direction:column;align-items:center;}
+}
+/* Additional utility classes */
+.text-center {text-align:center;}
+.mt-20 {margin-top:20px;}
+.mb-20 {margin-bottom:20px;}
+/* End of stylesheet */
