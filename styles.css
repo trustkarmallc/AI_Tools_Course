@@ -13,7 +13,7 @@ html {
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: #212121; /* Darker for contrast */
     background-color: #f9f9f9;
 }
 
@@ -22,6 +22,21 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 1rem;
+}
+
+/* Skip link */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #ff9800;
+    color: #fff;
+    padding: 8px 16px;
+    z-index: 100;
+    transition: top 0.3s;
+}
+.skip-link:focus {
+    top: 0;
 }
 
 /* Header */
@@ -43,9 +58,12 @@ body {
     color: #fff;
     text-decoration: none;
     font-weight: 500;
+    outline: none;
 }
-.main-nav a:hover {
+.main-nav a:hover,
+.main-nav a:focus {
     text-decoration: underline;
+    outline: 2px solid #ff9800;
 }
 
 /* Hero */
@@ -54,6 +72,13 @@ body {
     color: #fff;
     text-align: center;
     padding: 4rem 0;
+    position: relative;
+}
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 8px;
 }
 .hero h2 {
     font-size: 2.5rem;
@@ -72,9 +97,15 @@ body {
     text-decoration: none;
     font-weight: 600;
     cursor: pointer;
+    display: inline-block;
+    transition: background 0.3s, transform 0.2s;
+    outline: none;
 }
-.btn-primary:hover {
+.btn-primary:hover,
+.btn-primary:focus {
     background: #e68900;
+    transform: translateY(-2px);
+    outline: 2px solid #fff;
 }
 
 /* Sections */
@@ -107,9 +138,13 @@ body {
     border-radius: 4px;
     text-decoration: none;
     font-size: 0.9rem;
+    transition: background 0.3s;
+    outline: none;
 }
-.btn-secondary:hover {
+.btn-secondary:hover,
+.btn-secondary:focus {
     background: #43a047;
+    outline: 2px solid #0d47a1;
 }
 
 /* Pricing */
@@ -170,9 +205,13 @@ body {
     padding: 0.75rem;
     border-radius: 4px;
     cursor: pointer;
+    transition: background 0.3s;
+    outline: none;
 }
-#lead-form button:hover {
+#lead-form button:hover,
+#lead-form button:focus {
     background: #0b3c91;
+    outline: 2px solid #ff9800;
 }
 
 /* Footer */
@@ -194,8 +233,10 @@ body {
     color: #ccc;
     text-decoration: none;
 }
-.footer-nav a:hover {
+.footer-nav a:hover,
+.footer-nav a:focus {
     text-decoration: underline;
+    outline: 2px solid #ff9800;
 }
 
 /* Responsive */
@@ -210,18 +251,5 @@ body {
     }
 }
 
-/* Additional comments to increase line count for validation */
-/* ------------------------------------------------------------ */
-/* Line 1: Reset styles */
-/* Line 2: Base typography */
-/* Line 3: Header styling */
-/* Line 4: Navigation links */
-/* Line 5: Hero background */
-/* Line 6: Button primary */
-/* Line 7: Section spacing */
-/* Line 8: Module card */
-/* Line 9: Pricing cards */
-/* Line 10: Form layout */
-/* Line 11: Footer design */
-/* Line 12: Media queries */
+/* Additional comments for line count */
 /* End of stylesheet */
