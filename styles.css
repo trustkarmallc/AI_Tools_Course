@@ -7,6 +7,7 @@ html,body {font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1
 .site-header .logo {font-size:1.8rem;}
 .site-header .nav ul {list-style:none;display:flex;gap:15px;}
 .site-header .nav a {color:#fff;text-decoration:none;font-weight:500;}
+.site-header .nav a.active {border-bottom:2px solid #ffca28;}
 /* Hero */
 .hero {background:linear-gradient(135deg,#1565c0,#0d47a1);color:#fff;padding:80px 0;text-align:center;}
 .hero .btn-primary {background:#ffca28;color:#212121;padding:12px 24px;border:none;border-radius:4px;cursor:pointer;text-decoration:none;}
@@ -17,6 +18,10 @@ html,body {font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1
 .module h3 {color:#0d47a1;margin-bottom:10px;}
 .download-link {display:inline-block;margin-top:10px;color:#1565c0;text-decoration:none;}
 .download-link:hover {text-decoration:underline;}
+/* Resource Grid */
+.resource-grid {display:flex;flex-wrap:wrap;gap:20px;justify-content:center;}
+.resource-item {background:#fff;padding:15px;border-radius:6px;box-shadow:0 1px 3px rgba(0,0,0,0.1);width:260px;}
+.resource-item h4 {margin-bottom:8px;color:#0d47a1;}
 /* Testimonials */
 .testimonial {background:#e3f2fd;padding:15px;margin:10px 0;border-left:4px solid #0d47a1;}
 /* FAQ */
@@ -43,8 +48,9 @@ summary {font-weight:600;cursor:pointer;}
 @media (max-width:768px) {
     .site-header .nav ul {flex-direction:column;align-items:center;}
     .pricing-section .pricing-table {flex-direction:column;align-items:center;}
+    .resource-grid {flex-direction:column;align-items:center;}
 }
-/* Utility */
+/* Utility Classes */
 .text-center {text-align:center;}
 .mt-20 {margin-top:20px;}
 .mb-20 {margin-bottom:20px;}
