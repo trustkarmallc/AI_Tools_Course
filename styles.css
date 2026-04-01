@@ -55,6 +55,12 @@ body {
     padding: 4rem 0;
     text-align: center;
 }
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+}
 .hero h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
@@ -257,7 +263,7 @@ h2 {
     }
 }
 
-/* Additional Utility Classes */
+/* Utility Classes */
 .text-center { text-align: center; }
 .mt-1 { margin-top: 0.25rem; }
 .mt-2 { margin-top: 0.5rem; }
