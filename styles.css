@@ -1,42 +1,85 @@
-/* Base Reset */
+/* --------------------------------------------------- */
+/* Base Reset and Global Styles */
+/* --------------------------------------------------- */
 * { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
 body { font-family:'Helvetica Neue',Helvetica,Arial,sans-serif; line-height:1.6; color:#333; background:#f9f9f9; }
 .container { width:90%; max-width:1200px; margin:auto; padding:20px; }
 
-/* Header */
+/* --------------------------------------------------- */
+/* Header and Navigation */
+/* --------------------------------------------------- */
 .site-header { background:#0d47a1; color:#fff; padding:20px 0; }
 .logo { font-size:1.8rem; margin:0; }
-.main-nav ul { list-style:none; display:flex; gap:15px; }
+.main-nav ul { list-style:none; display:flex; gap:15px; flex-wrap:wrap; }
 .main-nav a { color:#fff; text-decoration:none; font-weight:500; }
 .main-nav a:hover { text-decoration:underline; }
 
+/* --------------------------------------------------- */
 /* Sections */
+/* --------------------------------------------------- */
 .section { padding:60px 0; }
 .section:nth-child(even) { background:#e3f2fd; }
 h2 { font-size:2rem; margin-bottom:20px; color:#0d47a1; }
-.module, .plan { background:#fff; border:1px solid #ddd; border-radius:8px; padding:20px; margin-bottom:20px; }
-.module h3, .plan h3 { margin-top:0; color:#1565c0; }
+
+/* --------------------------------------------------- */
+/* Module Cards */
+/* --------------------------------------------------- */
+.module { background:#fff; border:1px solid #ddd; border-radius:8px; padding:20px; margin-bottom:20px; }
+.module h3 { margin-top:0; color:#1565c0; }
 .download-btn { display:inline-block; margin-top:10px; padding:8px 12px; background:#1565c0; color:#fff; border-radius:4px; text-decoration:none; }
 .download-btn:hover { background:#0d47a1; }
 
+/* --------------------------------------------------- */
 /* Pricing Table */
+/* --------------------------------------------------- */
 .pricing-table { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
-.plan { flex:1 1 300px; text-align:center; }
+.plan { flex:1 1 300px; background:#fff; border:1px solid #ccc; border-radius:8px; padding:20px; text-align:center; }
+.plan h3 { margin-top:0; color:#d32f2f; }
 .price { font-size:2rem; color:#d32f2f; margin:10px 0; }
 .cta-btn { background:#d32f2f; color:#fff; border:none; padding:10px 20px; border-radius:4px; cursor:pointer; }
 .cta-btn:hover { background:#b71c1c; }
 
+/* --------------------------------------------------- */
+/* Testimonials */
+/* --------------------------------------------------- */
+.testimonial { background:#fff; border-left:4px solid #0d47a1; margin:15px 0; padding:15px; font-style:italic; }
+
+/* --------------------------------------------------- */
+/* FAQ */
+/* --------------------------------------------------- */
+details { background:#fff; border:1px solid #ddd; border-radius:6px; margin:10px 0; padding:10px; }
+summary { font-weight:600; cursor:pointer; }
+
+/* --------------------------------------------------- */
 /* Form */
+/* --------------------------------------------------- */
 .lead-form { display:grid; gap:10px; max-width:500px; margin:auto; }
 .lead-form label { font-weight:600; }
 .lead-form input, .lead-form textarea { width:100%; padding:8px; border:1px solid #ccc; border-radius:4px; }
 
+/* --------------------------------------------------- */
 /* Footer */
+/* --------------------------------------------------- */
 .site-footer { background:#0d47a1; color:#fff; text-align:center; padding:20px 0; }
 .social-links a { margin:0 5px; color:#fff; font-size:1.2rem; text-decoration:none; }
 
-/* Responsive */
+/* --------------------------------------------------- */
+/* Responsive Design */
+/* --------------------------------------------------- */
 @media (max-width:768px) {
     .main-nav ul { flex-direction:column; align-items:center; }
     .pricing-table { flex-direction:column; }
+    .plan { width:100%; }
 }
+
+/* --------------------------------------------------- */
+/* Additional Utility Classes */
+/* --------------------------------------------------- */
+.text-center { text-align:center; }
+.mt-20 { margin-top:20px; }
+.mb-20 { margin-bottom:20px; }
+
+/* --------------------------------------------------- */
+/* End of Styles */
+/* --------------------------------------------------- */
