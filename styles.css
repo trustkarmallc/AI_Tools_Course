@@ -17,6 +17,11 @@ html,body {font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1
 .module h3 {color:#0d47a1;margin-bottom:10px;}
 .download-link {display:inline-block;margin-top:10px;color:#1565c0;text-decoration:none;}
 .download-link:hover {text-decoration:underline;}
+/* Testimonials */
+.testimonial {background:#e3f2fd;padding:15px;margin:10px 0;border-left:4px solid #0d47a1;}
+/* FAQ */
+details {margin-bottom:10px;background:#fff;padding:10px;border-radius:4px;box-shadow:0 1px 3px rgba(0,0,0,0.1);}
+summary {font-weight:600;cursor:pointer;}
 /* Pricing */
 .pricing-section .pricing-table {display:flex;gap:20px;justify-content:center;flex-wrap:wrap;}
 .pricing-section .plan {background:#fff;padding:30px;border-radius:8px;width:280px;box-shadow:0 2px 6px rgba(0,0,0,0.1);text-align:center;}
@@ -39,7 +44,7 @@ html,body {font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1
     .site-header .nav ul {flex-direction:column;align-items:center;}
     .pricing-section .pricing-table {flex-direction:column;align-items:center;}
 }
-/* Additional utility classes */
+/* Utility */
 .text-center {text-align:center;}
 .mt-20 {margin-top:20px;}
 .mb-20 {margin-bottom:20px;}
