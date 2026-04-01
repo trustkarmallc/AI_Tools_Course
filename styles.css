@@ -46,6 +46,16 @@ h2 { font-size:2rem; margin-bottom:20px; color:#0d47a1; }
 .testimonial { background:#fff; border-left:4px solid #0d47a1; margin:15px 0; padding:15px; font-style:italic; }
 
 /* --------------------------------------------------- */
+/* Case Studies */
+/* --------------------------------------------------- */
+.case-study { background:#fff; border:1px solid #ddd; border-radius:6px; margin:10px 0; padding:15px; }
+
+/* --------------------------------------------------- */
+/* Blog */
+/* --------------------------------------------------- */
+.blog-post { background:#fff; border:1px solid #ccc; border-radius:6px; margin:10px 0; padding:15px; }
+
+/* --------------------------------------------------- */
 /* FAQ */
 /* --------------------------------------------------- */
 details { background:#fff; border:1px solid #ddd; border-radius:6px; margin:10px 0; padding:10px; }
